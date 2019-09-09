@@ -8,9 +8,14 @@
 Светила, имеющие склонение меньше -34 не представлены.
 В приложении имеется возможнось вращать наблюдателя, используя клавиши WASD.
 
+[English
+    Application shows starry sky depending on the observer's coordinates and, date, time and view direction.
+    Stars are taken from catalogue "Н.Александрович. Каталог звезд и незвездных объектов, видимых в средних широтах северного полушария"
+]
+
 Справка:
 
-Пакетный режим
+Пакетный режим (Console mode)
 usage: app_package.py [-h] --lat LAT --long LONG [--datetime DATETIME]
                       --azimuth AZIMUTH --height HEIGHT [--filter FILTER]
                       [--angle ANGLE] [--database DATABASE] --filename
@@ -32,7 +37,7 @@ optional arguments:
   
 Пример запуска: --lat N70:0:10 --long E90:00:00 --height 90 --azimuth 30 --size 300x300 --filename stars.png
 
-Графический режим
+Графический режим (GUI mode)
 
 usage: app_gui.py [-h] --lat LAT --long LONG [--datetime DATETIME] --azimuth
                   AZIMUTH --height HEIGHT [--filter FILTER] [--angle ANGLE]
@@ -57,3 +62,9 @@ optional arguments:
 Управление:
  - стрелки влево/вправо/вверх/вниз - вращение наблюдателя
  - минус/плюс(Shift + плюс) - отдаление/приближение
+ 
+[English    
+    Controls
+    - arrows - rotate observer
+    - "-/+" (or Shift + "+") - zoom out/zoom in
+]
